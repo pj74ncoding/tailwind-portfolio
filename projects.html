@@ -1,0 +1,350 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/6644687a4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tailwind Portfolio Project</title>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-mainbg: #fef8e7;
+        --color-buttonbg: #f4bd0b;
+        --color-buttonbghover: #fae18f;
+        --color-cardbg: #fcedbb;
+        --color-darkgrey: #63666a;
+        --color-footerbg: #fae18f;
+        --animate-up-and-down: up-and-down 2s ease-in-out;
+
+        @keyframes up-and-down {
+          0% {
+            transform: translate(0px, -6px);
+            background-color: #f4bd0b;
+          }
+          25% {
+            transform: translate(0px, 6px);
+            background-color: #f4bd0b;
+          }
+          50% {
+            transform: translate(0px, -6px);
+            background-color: #f4bd0b;
+          }
+          75% {
+            transform: translate(0px, 6px);
+            background-color: #f4bd0b;
+          }
+          100% {
+            transform: translate(0px, 0px);
+            background-color: #f4bd0b;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-mainbg">
+    <!-- NAV SECTION -------------------------------------------------------- -->
+    <!-- ==================================================================== -->
+    <section
+      class="flex justify-between items-center border-b-2 pl-8 pr-8 h-15"
+    >
+      <div>
+        <h1 class="font-bold">STUDENT_PORTFOLIO_V1</h1>
+      </div>
+      <div class="flex gap-10">
+        <nav class="flex justify-between items-center w-56 text-sm">
+          <a href="index.html">HOME</a>
+          <a class="border-b py-0.5 font-bold mb-1 text-sm" href="projects.html"
+            >PROJECTS</a
+          >
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="flex items-center">
+          <button
+            class="bg-buttonbg px-4 py-1 text-xs hover:bg-buttonbghover transistion-colors duration-1000 hover:cursor-pointer hover:border hover:shadow-md"
+          >
+            DOWNLOAD_CV
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- HEADER -------------------------------------------------------------------------->
+    <!-- ============================================================================== -->
+    <header>
+      <div class="ml-8 w-165 mt-12 pl-8 h-auto border-l-4">
+        <h1 class="font-bold text-5xl">SELECTED_WORKS</h1>
+        <div class="mt-4">
+          <p>
+            AN ARCHIVAL COLLECTION OF ACEDEMIC AND PERSONAL PROJECTS FOCUSING ON
+            STRUCTURAL INTEGRITY, COMPUTATIONAL DESIGN, AND INTERACTIVE SYSTEMS,
+            2022 - 2024.
+          </p>
+        </div>
+      </div>
+    </header>
+    <!-- GALLERY CARD SECTION---------------------------------------------------------- -->
+    <!-- ============================================================================== -->
+    <main
+      class="mx-8 h-auto mt-13 grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 border border-2 border-stone-300"
+    >
+      <!-- cards -->
+      <div class="group">
+        <div
+          class="border-r-2 border-b-2 border-stone-300 p-7 h-145 hover:cursor-pointer group-hover:bg-linear-[45deg,#63666a,60%,#edebeb] transform transistion-all duration-1000 group-hover:shadow-xl/30 group-hover:scale-101"
+        >
+          <img
+            class="h-60 w-full"
+            src="project-images/armand-khoury-4cBVro7SHLs-unsplash.jpg"
+            alt="Abstract pattern of squares."
+          />
+          <div class="flex justify-between items-center mt-9">
+            <h1 class="font-bold text-xl group-hover:text-white">
+              PROJECT TITLE
+            </h1>
+            <div class="text-xs border h-5 px-2">ID_001</div>
+          </div>
+          <div class="mt-5 leading-6 group-hover:text-mainbg">
+            <p>
+              Exploration of generative patterns using modular arithmatic. Focus
+              on visual weight and balance within a constrained 8px grid system.
+            </p>
+          </div>
+          <div class="flex text-xs gap-5 mt-10 group-hover:text-yellow-400">
+            <p>#SYSTEMS</p>
+            <p>#TYPOGRAPHY</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="group">
+        <div
+          class="border-r-2 border-b-2 border-stone-300 p-7 h-145 bg-cardbg group-hover:bg-linear-[45deg,#63666a,60%,#edebeb] transform transistion-all duration-1000 group-hover:shadow-xl/30 group-hover:scale-101 hover:cursor-pointer"
+        >
+          <img
+            class="h-60 w-full"
+            src="project-images/fong-NYcUkFJuxg0-unsplash.jpg"
+            alt="Computer code on a computer screen."
+          />
+          <div class="flex justify-between items-center mt-9">
+            <h1 class="font-bold text-xl group-hover:text-white">
+              INTERACTIVE SKILL: CSS HOVER
+            </h1>
+            <div class="text-xs border h-5 px-2 group-hover:text-black">
+              ID_002
+            </div>
+          </div>
+          <h1 class="font-bold text-xl group-hover:text-white">EFFECT</h1>
+          <div class="mt-5 leading-6 group-hover:text-mainbg">
+            <p>
+              Demonstrating rapid state transistions and color inversion through
+              standard CSS utility classes. Hover over this card to view the
+              visual transformation.
+            </p>
+          </div>
+          <div class="flex text-xs gap-5 mt-10 group-hover:text-yellow-400">
+            <p>#INTERACTIVE</p>
+            <p>#MOTION</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="group">
+        <div
+          class="border-b-2 border-stone-300 p-7 h-145 group-hover:bg-linear-[45deg,#63666a,60%,#edebeb] transistion-all transform duration-1000 group-hover:shadow-xl/30 group-hover:scale-101 hover:cursor-pointer"
+        >
+          <img
+            class="h-60 w-full"
+            src="project-images/flyd-xcNDjZXQ0q0-unsplash.jpg"
+            alt="A photo of red and white lines on a road at night."
+          />
+          <div class="flex justify-between items-center mt-9">
+            <h1 class="font-bold text-xl group-hover:text-white">
+              PROJECT TITLE
+            </h1>
+            <div class="text-xs border h-5 px-2 group-hover:text-black">
+              ID_003
+            </div>
+          </div>
+          <div
+            class="mt-5 leading-6 group-hover:text-white transistion-colors duration-1750"
+          >
+            <p>
+              Multi-dimensional data visualization for urban traffic flow.
+              Utilizing dark-gray scalar values to represent density and
+              frequency.
+            </p>
+          </div>
+          <div class="flex text-xs gap-5 mt-10 group-hover:text-yellow-400">
+            <p>#DATA_VIZ</p>
+            <p>#ALGORITHMIC</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="group">
+        <div
+          class="p-7 h-130 border-r-2 border-r-stone-300 hover:cursor-pointer group-hover:bg-linear-[45deg,#63666a,60%,#edebeb] transistion-colors duration-1000"
+        >
+          <img
+            class="h-60 w-full"
+            src="project-images/ricardo-gomez-angel-BHTh2pT4pMg-unsplash.jpg"
+            alt="Concrete structures in black and white."
+          />
+          <!-- <div class="border h-60 bg-yellow-400"></div> -->
+          <div class="flex justify-between items-center mt-9">
+            <h1 class="font-bold text-xl group-hover:text-white duration-1100">
+              PROJECT TITLE
+            </h1>
+            <div
+              class="text-xs border h-5 px-2 group-hover:text-white transistion-colors duration-1200"
+            >
+              ID_004
+            </div>
+          </div>
+          <div
+            class="mt-5 leading-6 group-hover:text-white transistion-colors duration-1300"
+          >
+            <p>
+              Design study of brutalist architecture translated into digital
+              interface components. Emphasis on raw material feel and high
+              contrast.
+            </p>
+          </div>
+          <div
+            class="flex text-xs gap-5 mt-10 group-hover:text-yellow-400 duration-1400 transistion-colors"
+          >
+            <p>#BRUTALISM</p>
+            <p>#UI_DESIGN</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="group">
+        <div
+          class="p-7 h-130 border-r-2 border-r-stone-300 group-hover:cursor-pointer group-hover:bg-linear-[45deg,#63666a,60%,#edebeb] transistion-colors duration-1000"
+        >
+          <img
+            class="h-60 w-full"
+            src="project-images/guerrillabuzz-EqS6OrIOaTs-unsplash.jpg"
+            alt="Spaced out cubes enclosed in frames connected by rods."
+          />
+
+          <div class="flex justify-between items-center mt-9">
+            <h1 class="font-bold text-xl group-hover:text-white duration-1100">
+              PROJECT TITLE
+            </h1>
+            <div
+              class="text-xs border h-5 px-2 group-hover:text-white transistion-colors duration-1200"
+            >
+              ID_005
+            </div>
+          </div>
+          <div
+            class="mt-5 leading-6 group-hover:text-white transistion-colors duration-1300"
+          >
+            <p>
+              Responsive system framework for educational platforms.
+              Prioritizing information hierarchy and accessible data nodes.
+            </p>
+          </div>
+          <div
+            class="flex text-xs gap-5 mt-10 group-hover:text-yellow-400 duration-1400 transistion-colors"
+          >
+            <p>#FRAMEWORK</p>
+            <p>#UX_RESEARCH</p>
+          </div>
+        </div>
+      </div>
+      <!--  -->
+      <div class="group">
+        <div
+          class="p-7 h-130 group-hover:bg-linear-[45deg,#63666a,60%,#edebeb] transistion-colors duration-1000 group-hover:cursor-pointer"
+        >
+          <img
+            class="h-60 w-full"
+            src="project-images/google-deepmind-cLx-ilXp_pI-unsplash.jpg"
+            alt="A chart with different patterns of circles."
+          />
+          <div class="flex justify-between items-center mt-9">
+            <h1 class="font-bold text-xl group-hover:text-white duration-1100">
+              PROJECT TITLE
+            </h1>
+            <div
+              class="text-xs border h-5 px-2 group-hover:text-white transistion-colors duration-1200"
+            >
+              ID_006
+            </div>
+          </div>
+          <div
+            class="mt-5 leading-6 group-hover:text-white transistion-colors duration-1300"
+          >
+            <p>
+              Experimental log of 100 days of layout experiments. Documentation
+              of grid-breaking patterns and asymmetrical balance.
+            </p>
+          </div>
+          <div
+            class="flex text-xs gap-5 mt-10 group-hover:text-yellow-400 duration-1400 transistion-colors group-hover:cursor-pointer"
+          >
+            <p>#LAYOUT</p>
+            <p>#EXPERIMENTAL</p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- LOAD_NEXT_ENTRIES SECTION  ----------------------------------------------------------------------- -->
+    <!-- ============================================================================== -->
+    <section class="flex justify-between mx-8 mt-25">
+      <div class="flex items-end">
+        <div
+          class="flex justify-between items-end border-t-2 border-t-stone-400 w-200 text-sm h-10 font-bold"
+        >
+          <p>ARCHIVE_SECTION_END</p>
+
+          <p>VIEWING_PAGE_01_OF_04</p>
+        </div>
+      </div>
+      <button
+        class="border border-3 py-4 px-8 font-bold hover:cursor-pointer hover:shadow-lg hover:animate-up-and-down"
+      >
+        LOAD_NEXT_ENTRIES
+      </button>
+    </section>
+
+    <!-- FOOTER ----------------------------------------------------------------------- -->
+    <!-- ============================================================================== -->
+    <footer
+      class="flex justify-between items-center pl-8 pr-8 h-15 border-t-3 bg-footerbg mt-20"
+    >
+      <p class="text-sm font-bold">
+        &copy;2024 ARCHITECTURAL PORTFOLIO. ALL RIGHTS RESERVED
+      </p>
+      <nav
+        class="flex justify-between items-center text-xs w-70 h-10 underline"
+      >
+        <a
+          class="hover:font-bold hover:mb-1 hover:transistion-all duration-200"
+          href="#"
+          >LINKEDIN</a
+        >
+        <a
+          class="hover:font-bold hover:mb-1 hover:transistion-all duration-200"
+          href="#"
+          >GITHUB</a
+        >
+        <a
+          class="hover:font-bold hover:mb-1 hover:transistion-all duration-200"
+          href="#"
+          >READCV</a
+        >
+        <a
+          class="hover:font-bold hover:mb-1 hover:transistion-all duration-200"
+          href="#"
+          >TWITTER</a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/6644687a4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tailwind Portfolio Project</title>
+    <style type="text/tailwindcss">
+      @theme {
+        --color-mainbg: #fef8e7;
+        --color-formbg: #fcedbb;
+        --color-buttonbg: #f4bd0b;
+        --color-buttonbghover: #fae18f;
+        --color-darkgrey: #63666a;
+        --color-blackbg: #000000;
+        --color-footerbg: #fae18f;
+
+        --animate-side-to-side: side-to-side 2s ease-in-out;
+
+        @keyframes side-to-side {
+          0% {
+            transform: translate(8px);
+            background-color: #f4bd0b;
+          }
+          33% {
+            transform: translate(-8px);
+            background-color: #f4bd0b;
+          }
+          66% {
+            transform: translate(8px);
+            background-color: #f4bd0b;
+          }
+          100% {
+            transform: translate(0px);
+            background-color: #f4bd0b;
+          }
+        }
+        @keyframes fade-in-scale {
+          0% {
+            opacity: 0;
+            transform: scale(0.95);
+          }
+          100% {
+            opacity: 1;
+            transform: scale(1);
+          }
+        }
+
+        @keyframes wiggle {
+          0%,
+          100% {
+            transform: rotate(-3deg);
+          }
+          50% {
+            transform: rotate(3deg);
+          }
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-mainbg">
+    <!-- NAV SECTION -------------------------------------------------------- -->
+    <!-- ==================================================================== -->
+    <section
+      class="flex justify-between items-center border-b-2 pl-8 pr-8 h-15"
+    >
+      <div>
+        <h1 class="font-bold">STUDENT_PORTFOLIO_V1</h1>
+      </div>
+      <div class="flex gap-10">
+        <nav class="flex justify-between items-center w-56 text-sm">
+          <a href="index.html">HOME</a>
+          <a href="projects.html">PROJECTS</a>
+          <a class="border-b py-0.5 font-bold mb-1" href="contact.html"
+            >CONTACT</a
+          >
+        </nav>
+        <div class="flex items-center">
+          <button
+            class="bg-buttonbg px-4 py-1 text-xs hover:bg-buttonbghover transistion-colors duration-1000 hover:cursor-pointer hover:border hover:shadow-md"
+          >
+            DOWNLOAD_CV
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- HEADER -------------------------------------------------------------------------->
+    <!-- ============================================================================== -->
+    <header>
+      <div class="ml-8 mt-10 h-87 box-border border-b-2 border-b-stone-400">
+        <div class="w-160 border-l-4 pl-8 h-auto">
+          <p class="text-sm tracking-widest">03 // INQUIRY_NODE</p>
+          <div class="text-8xl font-bold leading-21">
+            <h1>
+              LEAVE YOUR
+              <span
+                class="italic underline underline-offset-6 decoration-4 decoration-darkgrey text-darkgrey"
+                >MARK.</span
+              >
+            </h1>
+          </div>
+          <p class="mt-7">
+            CURRENTLY EXPLORING THE INTERSECTION OF TETONIC MATERIALTY AND
+            DIGITAL
+          </p>
+          <p>INTERFACES, OPEN FOR ARCHITECTURAL VIZUALIZATIONS, FULL STACK</p>
+          <p>COLLABORATIONS, AND TECHNICAL DIALOQUE.</p>
+        </div>
+      </div>
+    </header>
+    <!-- MAIN SECTION FORM AND ADDRESS / MAP------------------------------------------- -->
+    <!-- ============================================================================== -->
+    <main class="mt-13 grid grid-cols-[55%_1fr] h-190 mx-8">
+      <section class="border border-2 border-stone-300 bg-formbg h-149">
+        <form action="#" class="flex flex-col px-10">
+          <div class="flex justify-between mt-9">
+            <div>
+              <label class="text-xs font-bold tracking-wide" for="name"
+                >FULL NAME</label
+              >
+              <br />
+              <input
+                class="border mt-4 h-11 text-sm w-84 border-2 border-b-3 border-stone-300 text-stone-500"
+                type="text"
+                id="name"
+                placeholder="ALEX_VANCE"
+              />
+            </div>
+            <br />
+            <div>
+              <label class="text-xs font-bold tracking-wide" for="email"
+                >EMAIL ADDRESS</label
+              >
+              <br />
+              <input
+                class="border mt-4 h-11 text-sm w-85 border-2 border-b-3 border-stone-300 text-stone-500"
+                type="email"
+                id="email"
+                placeholder="CLIENT@DOMAIN.COM"
+              />
+            </div>
+          </div>
+          <label class="text-xs font-bold tracking-wide mt-12" for="subject"
+            >SUBJECT</label
+          >
+
+          <input
+            class="border mt-4 h-11 text-sm border-2 border-b-3 border-stone-300 text-stone-500"
+            type="text"
+            id="subject"
+            placeholder="PROJECT_COLLABORATION"
+          />
+          <label class="text-xs font-bold tracking-wide mt-12" for="message"
+            >MESSAGE</label
+          >
+
+          <textarea
+            class="border mt-4 h-10 text-sm h-30 border-2 border-b-3 border-stone-300 text-stone-500 pt-3"
+            name="message"
+            id="message"
+            placeholder="DESCRIBE THE SCOPE..."
+          ></textarea>
+
+          <button
+            class="tracking-widest text-buttonbg font-bold text-sm w-63 h-13 bg-black flex items-center justify-center gap-6 mt-15 hover:bg-buttonbg transition-all hover:text-black hover:border hover:shadow-lg duration-1000 hover:cursor-pointer"
+            type="submit"
+            disabled
+          >
+            INITIALIZE CONTACT
+            <i class="fa-solid fa-arrow-right-long" style="color: white"></i>
+          </button>
+        </form>
+      </section>
+      <!--  ----------------------------------------------------------------------- -->
+
+      <section class="pl-14 flex flex-col gap-12">
+        <div>
+          <div class="flex items-center gap-4">
+            <div class="border-2 w-12"></div>
+            <p class="font-bold tracking-widest text-xs">GEOGRAPHIC NODE</p>
+          </div>
+
+          <h1 class="font-bold text-xl mt-3">METRO_STATION_404</h1>
+          <div class="text-sm leading-5 mt-2">
+            <p>128 TECH PAVILION, LEVEL 02</p>
+            <p>ZURICH, SWITZERLAND CH-8001</p>
+          </div>
+
+          <!-- MAP -->
+          <div class="border-3 border-stone-300 h-67 mt-7">
+            <iframe
+              class="h-66 w-full"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10807.966161125563!2d8.53101136748511!3d47.37308358870627!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47900a0a4578c013%3A0x4c56004f520796ad!2s8001%20Z%C3%BCrich%2C%20Switzerland!5e0!3m2!1sen!2suk!4v1782920526407!5m2!1sen!2suk"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="strict-origin-when-cross-origin"
+            ></iframe>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex items-center gap-4">
+            <div class="border-2 w-12"></div>
+            <p class="font-bold tracking-widest text-xs">DIRECT REACH</p>
+          </div>
+          <div
+            class="flex justify-between items-center h-12 border-b-2 border-b-stone-300 mt-1"
+          >
+            <input
+              class="font-bold placeholder-blackbg"
+              type="email"
+              placeholder="HELLO@STUDIOARCHIVE.IO"
+            />
+            <i
+              class="fa-solid fa-arrow-right-long transform rotate-315 hover:cursor-pointer"
+              style="color: slategrey"
+            ></i>
+          </div>
+          <div
+            class="flex justify-between items-center h-12 border-b-2 border-b-stone-300"
+          >
+            <input
+              class="font-bold placeholder-blackbg"
+              type="text"
+              placeholder="+41 000 000 000"
+            />
+            <i
+              class="fa-solid fa-arrow-right-long transform rotate-315 hover:cursor-pointer"
+              style="color: slategrey"
+            ></i>
+          </div>
+        </div>
+        <div>
+          <div class="flex items-center gap-4">
+            <div class="border-2 w-12"></div>
+            <p class="font-bold tracking-widest text-xs">DIRECT PRESENCE</p>
+          </div>
+
+          <div class="flex gap-3 mt-5">
+            <div
+              class="text-xs tracking-widest border border-2 w-38 h-13 flex gap-2 justify-center items-center hover:animate-side-to-side hover:cursor-pointer hover:shadow-lg hover:font-bold"
+            >
+              <button>INSTAGRAM</button>
+              <i
+                class="fa-solid fa-arrow-right-long transform rotate-315"
+                style="color: black"
+              ></i>
+            </div>
+            <div
+              class="text-xs tracking-widest border border-2 w-38 h-13 flex gap-2 justify-center items-center hover:animate-side-to-side hover:cursor-pointer hover:shadow-lg hover:font-bold"
+            >
+              <button>LINKEDIN</button>
+              <i
+                class="fa-solid fa-arrow-right-long transform rotate-315"
+                style="color: black"
+              ></i>
+            </div>
+            <div
+              class="text-xs tracking-widest border border-2 w-38 h-13 flex gap-2 justify-center items-center hover:animate-side-to-side hover:cursor-pointer hover:shadow-lg hover:font-bold"
+            >
+              <button>GITHUB</button>
+              <i
+                class="fa-solid fa-arrow-right-long transform rotate-315"
+                style="color: black"
+              ></i>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <br />
+
+    <!-- FOOTER ----------------------------------------------------------------------- -->
+    <!-- ============================================================================== -->
+    <footer
+      class="flex justify-between items-center pl-8 pr-8 h-15 border-t-3 bg-footerbg"
+    >
+      <p class="text-sm font-bold">
+        &copy;2024 ARCHITECTURAL PORTFOLIO. ALL RIGHTS RESERVED
+      </p>
+      <nav
+        class="flex justify-between items-center text-sm w-70 h-10 underline"
+      >
+        <a
+          class="hover:font-bold hover:mb-1 hover:transistion duration-200"
+          href="#"
+          >LINKEDIN</a
+        >
+        <a
+          class="hover:font-bold hover:mb-1 hover:transistion duration-200"
+          href="#"
+          >GITHUB</a
+        >
+        <a
+          class="hover:font-bold hover:mb-1 hover:transistion duration-200"
+          href="#"
+          >READCV</a
+        >
+        <a
+          class="hover:font-bold hover:mb-1 hover:transistion duration-200"
+          href="#"
+          >TWITTER</a
+        >
+      </nav>
+    </footer>
+  </body>
+</html>

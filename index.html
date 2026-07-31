@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script
+      src="https://kit.fontawesome.com/6644687a4d.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Tailwind Portfolio Project</title>
+
+    <style type="text/tailwindcss">
+      @theme {
+        --color-mainbg: #fef8e7;
+        --color-buttonbg: #f4bd0b;
+        --color-buttonbghover: #fae18f;
+        --color-secondarybuttonbg: #fae68f;
+        --color-secondarybuttonhover: #fcedbb;
+        --color-columnbg: #fcedbb;
+        --color-blackbg: #000000;
+        --color-footerbg: #f8dc63;
+        --tracking-letterspace: 0.1em;
+      }
+    </style>
+  </head>
+
+  <body>
+    <main class="bg-mainbg">
+      <!-- HEADER ------------------------------------------------------------- -->
+      <!-- ==================================================================== -->
+      <header
+        class="flex justify-between items-center border-b-2 pl-8 pr-8 h-15"
+      >
+        <div>
+          <h1>STUDENT_PORTFOLIO_V1</h1>
+        </div>
+        <nav class="flex justify-between items-center w-56 text-sm">
+          <a class="border-b py-0.5 font-bold mb-1" href="index.html">HOME</a>
+          <a href="projects.html">PROJECTS</a>
+          <a href="contact.html">CONTACT</a>
+        </nav>
+        <div class="flex items-center">
+          <i
+            class="fa-solid fa-magnifying-glass fa-sm mr-5 hover:cursor-pointer"
+            style="color: rgb(21, 22, 23)"
+          ></i>
+          <button
+            class="bg-buttonbg px-4 py-1 text-xs hover:bg-buttonbghover transistion-colors duration-1000 hover:cursor-pointer hover:border hover:shadow-md"
+          >
+            DOWNLOAD_CV
+          </button>
+        </div>
+      </header>
+      <br />
+
+      <!-- HERO SECTION------------------------------------------------------------------ -->
+      <!-- ============================================================================== -->
+
+      <h2 class="pl-8 mt-8">SELECTED WORKS 2025-2026</h2>
+      <section
+        class="grid grid-cols-[71%_1fr] gap-27 h-70 pl-8 pr-8 box-border mt-3"
+      >
+        <div>
+          <div class="w-120">
+            <h1 class="text-6xl font-bold">ARCHITECTURAL</h1>
+            <h1 class="text-6xl font-bold">INTEGRITY &</h1>
+            <h1 class="text-6xl font-bold">SPATIAL LOGIC.</h1>
+          </div>
+        </div>
+        <div class="w-85">
+          <div class="w-85 h-35 pl-4 pr-14 box-border border-l-3 mt-2">
+            <p class="text-base">
+              A focused investigation into modular structures and technical
+              precision within high-density urban environments. Designed for
+              clarity, authority, and high-performance utility.
+            </p>
+          </div>
+
+          <div class="flex w-79 justify-between mt-8">
+            <a href="#"
+              ><div
+                class="text-xs h-12 w-36 flex flex-col justify-center items-center bg-buttonbg hover:bg-buttonbghover transistion-colors duration-1000 hover:border hover:shadow-lg"
+              >
+                <p>EXPLORE</p>
+                <p>PORTFOLIO</p>
+              </div></a
+            >
+            <a href="#">
+              <div
+                class="text-xs h-12 w-38 flex flex-col justify-center items-center bg-secondarybuttonbg hover:bg-secondarybuttonhover hover:border transistion-colors duration-1000 hover:shadow-lg"
+              >
+                <p>OUR</p>
+                <p>PHILOSOPHY</p>
+              </div></a
+            >
+          </div>
+        </div>
+      </section>
+
+      <!-- 4 COLUMN SECTION ------------------------------------------------------------- -->
+      <!-- ============================================================================== -->
+      <section
+        class="grid grid-cols-11 h-30 border-t-2 border-b-2 border-t-stone-300 border-b-stone-400 bg-columnbg items-center"
+      >
+        <div class="col-span-3">
+          <div class="flex flex-col col-span-3 items-start justify-center pl-8">
+            <h2 class="text-base">PROJECTS COMPLETED</h2>
+            <p class="text-2xl font-bold italic">42+</p>
+          </div>
+        </div>
+
+        <div class="col-span-3">
+          <div
+            class="flex flex-col items-center justify-center border-l-2 border-r-2 h-10 border-l-stone-300 border-r-stone-300"
+          >
+            <h2 class="text-base">GLOBAL AWARDS</h2>
+            <p class="text-2xl font-bold italic pr-24">12</p>
+          </div>
+        </div>
+
+        <div class="col-span-3">
+          <div
+            class="flex flex-col items-center justify-center border-r-2 border-r-stone-300 h-10"
+          >
+            <h2 class="text-base">TECHNICAL CERTS</h2>
+            <p class="text-2xl font-bold italic pr-24">08</p>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-end justify-center w-62">
+          <h2 class="text-base">DESIGN LABS</h2>
+          <p class="text-2xl font-bold italic pr-16">03</p>
+        </div>
+      </section>
+
+      <!-- MIDDLE SECTION --------------------------------------------------------------- -->
+      <!-- ============================================================================== -->
+
+      <section class="pt-8 pb-8">
+        <div
+          class="grid grid-flow-col grid-cols-4 grid-rows-8 gap-8 h-204 pl-8 pr-8"
+        >
+          <div
+            class="h-205 w-[100%] row-span-9 col-span-2 row-start-1 text-white bg-linear-[45deg,black,grey] flex flex-col justify-end pb-10 pl-10 box-border"
+          >
+            <p class="text-sm tracking-letterspace">PROJECT 001</p>
+            <h1 class="text-3xl font-bold mt-2">THE MONOLITH PAVILION</h1>
+            <p class="mt-3">
+              Exploration of concrete as a fluid yet structural element
+            </p>
+            <p class="pb-3">in public transit hubs.</p>
+            <div class="flex items-center w-43 mt-4">
+              <a href="#"
+                ><p
+                  class="text-bold border-b-1 border-b-black hover:border-b-white transistion-colors duration-200 hover:shadow-md"
+                >
+                  VIEW CASE STUDY
+                </p></a
+              >
+              <div>
+                <i
+                  class="fa-solid fa-arrow-right fa-lg pl-5"
+                  style="color: white"
+                ></i>
+              </div>
+            </div>
+          </div>
+          <!-- -------------------------------------------------------------------------------- -->
+          <div
+            class="row-start-1 row-end-5 col-span-2 border-b-2 border-b-stone-400 pl-10 pr-10 pt-10 bg-secondarybuttonbg"
+          >
+            <p class="tracking-widest">METHODOLOGY</p>
+
+            <div class="font-bold mt-4 text-2xl w-100 leading-7">
+              <h1>BIM INTEGRATION & STRUCTURAL ANALYTICS</h1>
+            </div>
+
+            <p class="mt-4">
+              Every project follows a rigid grid system of 8px increments,
+            </p>
+            <p>
+              ensuring mathematical perfection from initial concept to final
+            </p>
+            <p>blueprint.</p>
+
+            <div
+              class="border-t-2 border-t-stone-300 mt-16 grid grid-cols-3 text-base pt-5 tracking-normal gap-5"
+            >
+              <div>
+                <h1 class="border-b-4 pb-1">CAD</h1>
+              </div>
+
+              <div>
+                <h1 class="border-b-4 pb-1">3D MAPPING</h1>
+              </div>
+
+              <div>
+                <h1 class="border-b-4 pb-1 border-b-stone-300">
+                  SUSTAINABILITY
+                </h1>
+              </div>
+            </div>
+          </div>
+          <!-- ----------------------------------------------------------------- -->
+          <section
+            class="col-span-2 row-start-5 row-end-10 grid grid-cols-2 gap-8"
+          >
+            <div
+              class="border-r-stone-400 border-r-2 pt-7 grid grid-rows-5 bg-columnbg"
+            >
+              <div>
+                <p class="tracking-wider pl-8">LAB ARCHIVE</p>
+                <h1 class="font-bold text-2xl pl-8 pt-2">SHADOW STUDIES</h1>
+              </div>
+              <div class="row-start-4 row-end-6 grid grid-cols-2">
+                <div class="col-start-2 col-end-3 bg-blackbg"></div>
+              </div>
+            </div>
+
+            <div class="bg-blackbg text-white tracking-wide pl-8 pt-31">
+              <i
+                class="fa-solid fa-compass-drafting pl-1"
+                style="color: white"
+              ></i>
+
+              <div class="mt-5 tracking-widest text-2xl leading-7 font-bold">
+                <h1>JOIN THE</h1>
+                <h1>ARCHITECTURAL</h1>
+                <h1>DIALOGUE.</h1>
+              </div>
+
+              <button
+                class="border border-white px-4 py-2 text-xs mt-4 hover:bg-white hover:text-black transistion-colours duration-700 hover:cursor-pointer hover:shadow-md hover:shadow-white"
+              >
+                SUBMIT INQUIRY
+              </button>
+            </div>
+          </section>
+        </div>
+      </section>
+      <!-- INDEX ------------------------------------------------------------------------ -->
+      <!-- ============================================================================== -->
+      <header>
+        <p class="pl-8 tracking-widest">INDEX</p>
+        <div
+          class="flex justify-between items-center ml-8 mr-8 border-b-2 pb-6"
+        >
+          <h1 class="text-4xl font-bold">CURRENT PROJECTS</h1>
+          <div class="flex flex-col items-end leading-6">
+            <p class="tracking-widest">SORT BY</p>
+            <p class="underline font-bold">YEAR: 2024</p>
+          </div>
+        </div>
+      </header>
+
+      <section>
+        <div
+          class="flex ml-8 mr-8 gap-13 items-center pl-5 mt-21 border-b-2 border-b-stone-300 pb-7"
+        >
+          <p class="font-bold">001</p>
+          <p class="font-bold text-xl w-70">VORTEX HOUSING COMPLEX</p>
+          <div class="w-30">
+            <p>STOCKHOLM, SE</p>
+          </div>
+          <div>
+            <button
+              class="hover:cursor-pointer hover:bg-buttonbghover hover:border hover:shadow-md transistion-colors duration-500 py-1 px-3 bg-buttonbg text-xs font-bold"
+            >
+              URBAN
+            </button>
+            <button
+              class="hover:cursor-pointer hover:bg-buttonbghover hover:border hover:shadow-md transistion-colors duration-500 py-1 px-3 bg-buttonbg text-xs font-bold ml-2"
+            >
+              RESIDENTIAL
+            </button>
+          </div>
+        </div>
+        <div
+          class="flex ml-8 mr-8 gap-13 items-center pl-5 m-7 border-b-2 border-b-stone-300 pb-7"
+        >
+          <p class="font-bold">002</p>
+          <p class="font-bold text-xl w-70">THE LINEAR OBSERVATORY</p>
+          <div class="w-30">
+            <p>ATACAMA, CL</p>
+          </div>
+          <div>
+            <button
+              class="hover:cursor-pointer hover:bg-buttonbghover hover:border hover:shadow-md transistion-colors duration-500 py-1 hover:shadow-md px-3 bg-buttonbg text-xs font-bold"
+            >
+              SCIENCE
+            </button>
+            <button
+              class="hover:cursor-pointer hover:bg-buttonbghover hover:border hover:shadow-md transistion-colors duration-500 py-1 hover:shadow-md px-3 bg-buttonbg text-xs font-bold ml-2"
+            >
+              MINIMALIST
+            </button>
+          </div>
+        </div>
+        <div class="flex ml-8 mr-8 gap-13 items-center pl-5 mt-7 pb-7">
+          <p class="font-bold">003</p>
+          <p class="font-bold text-xl w-70">BRUTALIST ATRIUM</p>
+          <div class="w-30">
+            <p>BERLIN, DE</p>
+          </div>
+          <div>
+            <button
+              class="hover:cursor-pointer hover:bg-buttonbghover hover:border hover:shadow-md transistion-colors duration-500 py-1 px-3 bg-buttonbg text-xs font-bold"
+            >
+              PUBLIC
+            </button>
+            <button
+              class="hover:cursor-pointer hover:bg-buttonbghover hover:border hover:shadow-md transistion-colors duration-500 py-1 px-3 bg-buttonbg text-xs font-bold ml-2"
+            >
+              INTERIOR
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------------------ -->
+      <section
+        class="flex flex-col items-center h-128 bg-columnbg mt-20 pt-28 text-white bg-linear-[45deg,black,grey]"
+      >
+        <div class="w-226 text-6xl leading-17 font-bold">
+          <h1>STAY UPDATED ON THE LATEST</h1>
+          <h1>STRUCTURAL INVESTIGATIONS.</h1>
+        </div>
+        <div
+          class="flex items-center justify-between w-145 border-b-1 border-b-white p-2 mt-11"
+        >
+          <input
+            class="pl-1 w-100 py-1"
+            type="email"
+            placeholder="EMAIL ADDRESS"
+          />
+          <i
+            class="fa-solid fa-arrow-right fa-lg hover:cursor-pointer"
+            style="color: white"
+          ></i>
+        </div>
+        <div class="flex gap-10 tracking-widest mt-9">
+          <p
+            class="hover:text-yellow-300 hover:cursor-pointer hover:border-b-1 hover:border-b-white transistion-colors duration-300"
+          >
+            JOURNAL
+          </p>
+          <p
+            class="hover:text-yellow-300 hover:cursor-pointer hover:border-b-1 hover:border-b-white transistion-colors duration-300"
+          >
+            NOTES
+          </p>
+          <p
+            class="hover:text-yellow-300 hover:cursor-pointer hover:border-b-1 hover:border-b-white transistion-colors duration-300"
+          >
+            TWITTER
+          </p>
+        </div>
+      </section>
+
+      <!-- FOOTER ----------------------------------------------------------------------- -->
+      <!-- ============================================================================== -->
+      <footer
+        class="flex justify-between items-center pl-8 pr-8 h-15 border-t-2 bg-footerbg"
+      >
+        <p class="text-sm font-bold">
+          &copy;2024 ARCHITECTURAL PORTFOLIO. ALL RIGHTS RESERVED
+        </p>
+        <nav class="flex justify-between items-center text-xs w-65 h-10">
+          <a
+            class="hover:font-bold hover:border-b hover:py-0.5 hover:mb-1 hover:transistion-all duration-200"
+            href="#"
+            >INSTAGRAM</a
+          >
+          <a
+            class="hover:font-bold hover:border-b hover:py-0.5 hover:mb-1 hover:transistion-all duration-200"
+            href="#"
+            >LINKEDIN</a
+          >
+          <a
+            class="hover:font-bold hover:border-b hover:py-0.5 hover:mb-1 hover:transistion-all duration-200"
+            href="#"
+            >GITHUB</a
+          >
+        </nav>
+      </footer>
+    </main>
+  </body>
+</html>
