@@ -1,6 +1,5 @@
 # tailwind-portfolio
 
-
 Replicated a website using HTML and Tailwind from a wireframe
 
 Live Demo: https://tailwind-portfolio-ivory-sigma.vercel.app/
@@ -27,15 +26,12 @@ Live Demo: https://tailwind-portfolio-ivory-sigma.vercel.app/
 
 ### Motivation
 
-Why did you build this project?
+I wanted to learn how to structure a website with multiple pages from a wireframe using Tailwindcss
 
-### Objective
-
-What problem does this application solve?
 
 ### Learning Outcomes
 
-- Learnt How to use Tailwind
+- Learnt how to implement Tailwind into HTML
 - Learnt how to add different animations to my hover effects.
 - Learnt how to structure a webpage
 
@@ -105,7 +101,6 @@ Frontend:
 
 ```bash
 cd tailwind-portfolio
-
 npm install
 ```
 
