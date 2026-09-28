@@ -77,7 +77,6 @@ client/
   index.html
   ITOL TailwindCSS Project - Architectural Portfolio.pdf
   projects.html
-  tree.txt
  |   
   \---project-images
 
