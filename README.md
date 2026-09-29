@@ -26,7 +26,9 @@ Live Demo: https://tailwind-portfolio-ivory-sigma.vercel.app/
 
 ### Motivation
 
-I wanted to learn how to structure a website with multiple pages from a wireframe using Tailwindcss
+- ITonlinelearning course project
+
+This project helped me to learn how to structure a website with multiple pages from a wireframe, adding style with Tailwindcss
 
 
 ### Learning Outcomes
