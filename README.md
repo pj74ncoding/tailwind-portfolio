@@ -124,8 +124,7 @@ npm start
         ricardo-gomez-angel-BHTh2pT4pMg-unsplash.jpg
 ```
 
-```
-```
+---
 
 ## Future Improvements
 
