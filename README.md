@@ -28,7 +28,7 @@ Live Demo: https://tailwind-portfolio-ivory-sigma.vercel.app/
 
 - ITonlinelearning course project
 
-This project helped me to learn how to structure a website with multiple pages from a wireframe, adding style with Tailwindcss
+This project helped me to learn how to structure a website with multiple pages from a wireframe, adding styling with Tailwindcss
 
 
 ### Learning Outcomes
@@ -40,8 +40,8 @@ This project helped me to learn how to structure a website with multiple pages f
 
 ## Project Features
 
-- hover effects on the buttons
-- click the nav links to move to the different pages
+- Hover effects on the buttons
+- Click the nav links to move to the different pages
 - Implemented a user input area in the contact form
 - Embedded a map form Google maps
 - Implemented animations on the social links
@@ -101,11 +101,10 @@ cd tailwind-portfolio
 Frontend:
 
 ```bash
-cd tailwind-portfolio
 npm install
 ```
 
-### Run Development Servers
+### Run Application
 
 Frontend:
 
@@ -113,7 +112,7 @@ Frontend:
 npm start
 ```
 
-## Screenshots
+## Preview
 
 ```
 ---project-images
@@ -125,13 +124,8 @@ npm start
         ricardo-gomez-angel-BHTh2pT4pMg-unsplash.jpg
 ```
 
-Add inside README:
-
-```markdown
-![Home Page](assets/home.png)
-![Dashboard](assets/dashboard.png)
+oard](assets/dashboard.png)
 ```
-
 ---
 
 ## Future Improvements
