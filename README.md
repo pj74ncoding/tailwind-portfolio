@@ -123,7 +123,6 @@ npm start
         guerrillabuzz-EqS6OrIOaTs-unsplash.jpg
         ricardo-gomez-angel-BHTh2pT4pMg-unsplash.jpg
 ```
-
 ---
 
 ## Future Improvements
